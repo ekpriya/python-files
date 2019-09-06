@@ -1,0 +1,9 @@
+emp1=['id:1','name:kavi','age:21','loc:chennai']
+emp2=['id:2','name:savi','age:20','loc:delhi']
+details=[emp1,emp2]
+emp1.append('project:cloud')
+# emp2.append('state:TN')
+# emp1.append('state:TN')
+emp1.pop()
+for e in details:
+    print(e)

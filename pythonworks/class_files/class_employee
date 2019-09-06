@@ -1,0 +1,23 @@
+class Employee:
+    def __init__(self):
+        self.setData()
+        self.showData()
+
+    def setData(self):
+        self.id =int(input("Enter Id:\t"))
+        self.name = input("Enter Name:\t")
+        self.age = input("Enter age:\t")
+
+    def showData(self):
+        print("Id\t:",self.id)
+        print("Name\t:", self.name)
+        print("age\t:", self.age)
+
+
+#
+emp=Employee()
+# emp.setData()
+# emp.showData()
+
+# if __name__=="__main__":
+#     main()
