@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<title> Validation </title>
+<script src="reg.js"></script>
+
+<style>
+form{
+margin:50px 0px 0px 60px;
+}
+th,tr,td{
+padding:5px;
+}
+
+form textarea{
+width:350px;
+height:150px;
+}
+#demo,#pass,#name,#addres,#select,#code,#mail,#gender,#warning_username,#warning_password,#warning_email
+{
+color:red;
+font-size:70%
+}
+
+#sub{
+margin-left:150px;
+font-size:20px;
+}
+h1{
+margin-left:70px;
+}
+</style>
+</head>
+<body >
+<h1> Form</h1>
+
+<form name="registration" >
+<table>
+
+
+<tr><td><label for="username" >Name:</label></td>
+<td><input type="text" id="username" name="username" size="50" onblur=" toValidateName()" />
+<p><span id ="warning_username"></span></p></td></tr>
+
+
+
+<tr><td><label for="password">Password:</label></td>
+<td><input type="password" id="password" name="password" size="12" onblur=" toValidatePassword()" />
+    <p><span id ="warning_password"></span></p></td></tr>
+
+
+
+<tr><td><label for="country">Country:</label></td>
+<td><select name="country" onblur="toValidateCountry()" required>
+<option selected="" value="Default">select a country</option>
+<option value="AF">India</option>
+<option value="AL">Canada</option>
+<option value="DZ">Japan</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select><p id="select"  ></p></td></tr>
+
+
+
+<tr><td><label for="email">Email:</label></td>
+<td><input type="text" id="email" name="email" size="25" onblur="toValidateEmail()" />
+
+<p><span id ="warning_email"></span></p></td></tr>
+
+
+
+<tr><td><label for="Gender">Gender :</label></td>
+<td><input  type="radio"name="male" value="male" onblur="toValidateGender()"/> Male
+<input  type="radio" name="female" value="female" onblur="toValidateGender()" /> Female<p id="gender"  style="font-size:70%;"></p></td></td>
+</tr>
+
+ 
+<tr><td colspan="2"><input id="sub" type="submit" value="Submit" /><p id="sub"  ></p></tr></td>
+    
+
+</table>
+</form>
+</body>
+</html>
