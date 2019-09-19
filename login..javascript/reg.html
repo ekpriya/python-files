@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title> Validation form </title>
+    <script src="reg.js"></script>
+    <link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+
+<body>
+    <h1> Form Validation</h1>
+    <form name="registration" onsubmit=" return on_submit();">
+        <table>
+            <tr>
+                <td><label for="username">Name:</label></td>
+                <td><input type="text" id="username" name="username" size="40" onclick=" toValidateName()">
+                    <p><span id="warning_username"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" size="40" onclick=" toValidatePassword()">
+                    <p><span id="warning_password"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td><select name="country" onclick="toValidateCountry()">
+                        <option selected="" value="Default">select a country</option>
+                        <option>India</option>
+                        <option>Canada</option>
+                        <option>Japan</option>
+                        <option>Russia</option>
+                        <option>China</option>
+                    </select>
+                    <p id="warning_select"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="email" name="email" size="40" onclick="toValidateEmail()">
+                    <p><span id="warning_email"></span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender ">Gender:</label></td>
+                <td><label><input type="radio" value="m" name="gender" onclick="toValidateGender()"> Male</label>
+                    <label><input type="radio" value="f" name="gender" onclick="toValidateGender()"> Female</label>
+                    <p id="warning_gender"></p>
+                </td><br>
+            </tr>
+            <tr>
+                <td colspan="2"><input id="sub" type="submit" value="Submit">
+                    <input id="reset" type="button" value="Reset" onClick="window.location.reload()"></td>
+                <p id="sub"></p>
+            </tr>
+            </td>
+        </table>
+    </form>
+</body>
+
+</html>

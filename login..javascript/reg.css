@@ -1,0 +1,21 @@
+form{
+    margin:50px 0px 0px 60px;
+}
+th,tr,td{
+    padding:5px;
+}
+#warning_username,#warning_password,#warning_email,#warning_gender,#warning_select{
+    color:red;
+    font-size:70%
+}
+#sub{
+    margin-left:150px;
+    font-size:20px;
+}
+#reset{
+    font-size:20px;
+}
+h1{
+    text-align: center;
+    padding:30 ;
+}
