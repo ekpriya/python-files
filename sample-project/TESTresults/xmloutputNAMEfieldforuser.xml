@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="3" time="9.284">
+ <testsuite name="NAME field for user :" timestamp="2019-09-27T17:35:24" hostname="localhost" time="9.284" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="NAME field for user :" name="should display a input Name field for user" time="3.07" />
+  <testcase classname="NAME field for user :" name="on submit of name field...with valid details ,its submitted" time="3.012" />
+  <testcase classname="NAME field for user :" name="on submit of name field...with error it will be notified to user" time="3.2" />
+ </testsuite>
+</testsuites>

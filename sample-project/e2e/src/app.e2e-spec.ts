@@ -1,23 +1,108 @@
-// import { AppPage, Homepage } from './app.po';
-// import { browser } from 'protractor';
+import { AppPage } from './app.po';
+import { browser, element, by } from 'protractor';
+import { Homepage } from './home.po';
+
+
+
+
+describe("Title message :", () => {
+    let appPage: AppPage;
+   
+    beforeEach(() => {
+        appPage = new  AppPage();
+    });
+   it("should display title message of the page",()=>{
+       appPage.navigateTo()
+    expect(appPage.getPageTitleText1()).toEqual('Welcome to sample-project!');
+   })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // describe('workspace-project App', () => {
 //   let page: AppPage;
-//   let homepage: Homepage;
 
 //   beforeEach(() => {
 //     page = new AppPage();
-//     homepage = new Homepage();
 //   });
 
 //   it('should display navigate message', () => {
 //     page.navigateTo();
 //   });
 
-//   it('should display a title message of the page', () => {
-//     expect(page.getPageTitleText()).toEqual('FILL THE FORM');
+//   it('should display a h1 tag message of the page', () => {
+//     expect(page.getPageTitleText()).toEqual('Welcome to sample-project!');
 //   });
+// })
+
+
+
 
 //   it('should display a title message of the home page', () => {
 //     expect(homepage.getPageTitleText()).toEqual(':form:');
@@ -42,5 +127,5 @@
 //     browser.driver.sleep(5000);
 // });
 // });
- 
+
 // })

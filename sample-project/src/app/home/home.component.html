@@ -1,11 +1,10 @@
-<h2 style="text-align: center">:form Validation:</h2>
 <div id="page">
   <form [formGroup]="userForm">
     <table>
       <tr>
         <div class="form-group">
           <label for="name">NAME: </label>
-          <input type="text" formControlName="name" size="40">
+          <input type="text" name="name" formControlName="name" size="40">
           <div id="warn" *ngIf=" (formControls.name.touched || submitted) && formControls.name.errors ">
             <div
               *ngIf="formControls.name.errors.required ||formControls.name.errors.pattern || formControls.name.errors.maxlength ||formControls.name.errors.minlength ">
@@ -16,7 +15,7 @@
       <tr>
         <div class="form-group">
           <label for="password">PASSWORD: </label>
-          <input type="password" formControlName="password" size="35">
+          <input type="password" name="password" id="password" formControlName="password" size="35">
           <div id="warn" *ngIf="(formControls.password.touched ||submitted) && formControls.password.errors">
             <div
               *ngIf="formControls.password.errors.minlength ||formControls.password.errors.required|| formControls.password.errors.maxlength">
@@ -27,9 +26,10 @@
       <tr>
         <div class="form-group">
           <label for="confirm_password">CONFIRM PASSWORD: </label>
-          <input type="password" formControlName="confirm_password" size="26"
+          <input type="password" name="confirm_password" id="confirm_password" formControlName="confirm_password"
+            size="26"
             [ngClass]="{ 'is-invalid': (formControls.confirm_password.touched ||submitted)  && formControls.confirm_password.errors }">
-          <div id="warn"
+          <div id="cpwarn"
             *ngIf="(formControls.confirm_password.touched ||submitted) && formControls.confirm_password.errors">
             <div *ngIf="formControls.confirm_password.errors.required">Password is required</div>
             <div *ngIf="formControls.confirm_password.errors.mustMatch">please..check password is not matching</div>
@@ -37,11 +37,11 @@
         </div>
       </tr><br>
       <tr>
-        <div class="form-group">
+        <div class="form-group" name="GENDER">
           <label for="gender">GENDER :
-            <input type="radio" value="Male" formControlName="gender">MALE</label>
-          <label><input type="radio" value="Female" formControlName="gender">FEMALE </label>
-          <div id="warn" *ngIf="(formControls.gender.touched || submitted) && formControls.gender.errors  ">
+            <input type="radio" value="Male" id="male" formControlName="gender" name="gender">MALE</label>
+          <label><input type="radio" id="Female" value="Female" formControlName="gender" name="gender">FEMALE </label>
+          <div id="gwarn" *ngIf="(formControls.gender.touched || submitted) && formControls.gender.errors  ">
             <div *ngIf="formControls.gender.errors.required ">please..select one </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
       <tr>
         <div class="form-group">
           <label for="email">EMAIL: </label>
-          <input type="text" formControlName="email" size="40">
+          <input type="text" name="email" id="email" formControlName="email" size="40">
           <div id="warn" *ngIf="(formControls.email.touched|| submitted) && formControls.email.errors">
             <div *ngIf=" formControls.email.errors.email || formControls.email.errors.required ">please..fill with a
               valid email</div>
@@ -58,23 +58,23 @@
       </tr><br>
       <tr>
         <div class="form-group">
-          <label for="country">SELECT COUNTRY:</label>
-          <select formControlName="country">
-            <option value="" disabled> </option>
+          <label for="country" id="country">SELECT COUNTRY:</label>
+          <select value="select" name="country" formControlName="country">
+            <!-- <option value="" disabled> </option> -->
             <option> India</option>
             <option>America</option>
             <option>Japan</option>
             <option>Russia</option>
           </select>
-          <div id="warn" *ngIf="(formControls.country.touched || submitted)&& formControls.country.errors">
+          <div id="swarn" *ngIf="(formControls.country.touched || submitted)&& formControls.country.errors">
             <div *ngIf="formControls.country.errors.required">please..select one </div>
           </div>
         </div>
       </tr><br>
       <tr>
         <div class="form-group">
-          <td><button name="onsubmit" type="submit" (click)="onSubmit()">SUBMIT</button> </td>
-          <td><button name="onreset" type="resubmit" (click)="reSubmit()">RESET</button></td>
+          <td><button id="onsubmit" type="submit" (click)="onSubmit()">SUBMIT</button> </td>
+          <td><button id="onreset" type="resubmit" (click)="reSubmit()">RESET</button></td>
         </div>
       </tr>
     </table>

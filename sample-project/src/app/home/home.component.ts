@@ -7,6 +7,9 @@ import { FormBuilder, FormGroup, Validators} from '@angular/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  content(content: any) {
+    throw new Error("Method not implemented.");
+  }
 
   public userForm: FormGroup;
   submitted = false;

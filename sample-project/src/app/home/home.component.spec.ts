@@ -5,11 +5,11 @@ import { BrowserModule, By } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DebugElement } from '@angular/core';
 
+
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
   let de:DebugElement;
-  let el:HTMLElement;
 
 
   beforeEach(async(() => {
@@ -18,11 +18,7 @@ describe('HomeComponent', () => {
         imports:[BrowserModule,FormsModule,ReactiveFormsModule]
       
     })
-    .compileComponents().then(()=>{
-      fixture= TestBed.createComponent(HomeComponent);
-      component=fixture.componentInstance;
-      de=fixture.debugElement.query(By.css('userForm'));
-    });
+    .compileComponents();
   }));
 
   beforeEach(() => {
@@ -31,7 +27,10 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create component', () => {
     expect(component).toBeTruthy();
   });
+  // it('should throw error when name field is submited with empty or invalid values',()=>{
+  // expect(component.submitted);
+  // })
 });

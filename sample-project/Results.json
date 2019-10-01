@@ -1,0 +1,191 @@
+[
+  {
+    "description": "NAME field for user : should display a input Name field for user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3990
+  },
+  {
+    "description": "NAME field for user : on submit of name field...with valid details ,its submitted",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4037
+  },
+  {
+    "description": "NAME field for user : on submit of name field...with error it will be notified to user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4001
+  },
+  {
+    "description": "PASSWORD field for user : should display a input Password field for user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3061
+  },
+  {
+    "description": "PASSWORD field for user : on submit of password field...with valid detail ,its submitted",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4053
+  },
+  {
+    "description": "PASSWORD field for user : on submit of password field...with error it will be notified to user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4079
+  },
+  {
+    "description": "CONFIRM PASSWORD field for user : should display a input Confirm Password field for user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3868
+  },
+  {
+    "description": "CONFIRM PASSWORD field for user : on submit of confirm password field...with valid details,its submitted",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5028
+  },
+  {
+    "description": "CONFIRM PASSWORD field for user : on submit of confirm password field...with error it will be notified to user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4174
+  },
+  {
+    "description": "Email field for user : should display a input email field for user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3922
+  },
+  {
+    "description": "Email field for user : on submit of email field...with valid detail, its submitted",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4078
+  },
+  {
+    "description": "Email field for user : on submit of email field...with error it will be notified to user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4105
+  },
+  {
+    "description": "Gender field for user : should display a input Gender field for user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3880
+  },
+  {
+    "description": "Gender field for user : on submit of gender field...without selecting any option ,it will be notified to user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4071
+  },
+  {
+    "description": "Gender field for user : on submit of gender field...with option selected ,its valid",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4105
+  },
+  {
+    "description": "Country dropdown field for user : should display a input Country field for user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3896
+  },
+  {
+    "description": "Country dropdown field for user : on submit of country field...without selecting any option ,it will be notified to user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4050
+  },
+  {
+    "description": "Country dropdown field for user : on submit of country field...with option selected ,its valid",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 4002
+  },
+  {
+    "description": "the FORM submission  for user : should display a Submit Button for user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3886
+  },
+  {
+    "description": "the FORM submission  for user : on submit of FORM ..with empty fields or invalid details,it will be notified to user",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 3950
+  },
+  {
+    "description": "the FORM submission  for user : on submit of FORM ..with valid details ,it is submitted with no notification",
+    "assertions": [
+      {
+        "passed": true
+      }
+    ],
+    "duration": 5072
+  }
+]
